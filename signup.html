@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="d-flex justify-content-center align-items-start">
+        <div class="smartSystem text-center">
+            <h1>Smart Login System</h1>
+            <input oninput="validationInputs(this , 'msgName')" id="name" class="form-control text-white"  placeholder="Enter your name" name="name" type="text" >
+            <p class="alert alert-danger p-1 d-none " id="msgName">
+                invalid pattern
+            </p>
+            <input oninput="validationInputs(this , 'msgEmail')" id="email" class="form-control mt-3 text-white" type="email" placeholder="Enter your email" name="email">
+            <p class="alert alert-danger p-1 d-none" id="msgEmail">
+                invalid pattern
+            </p>
+            <input oninput="validationInputs(this , 'msgPass')" id="pass" class="form-control mt-3 text-white"  type="password" name="password" placeholder="Enter your password">
+            <p id="msgPass" class="alert alert-danger p-1 d-none">
+                invalid pattern
+            </p>
+            <p id="msg" class="text-success d-none">Success</p>
+            <p id="requiredMsg" class="text-danger d-none">All inputs is required</p>
+            <p id="existMsg"class="text-danger d-none">email already exists</p>
+            <button id="btnSignUp" class="btn mt-4">Sign Up</button>
+            <p class="text-white mt-3">You have an account? <button id="signInBtn" class="text-white bg-transparent border-0 signBtn"  >Signin</button></p>
+        </div>
+    </section>
+    <script src="js/signup.js"></script>
+</body>
+</html>

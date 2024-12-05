@@ -1,0 +1,91 @@
+section{
+    background-color: #24353F;
+    height: 100vh;
+    font-family: sans-serif;
+}
+section .smartSystem{
+    margin-top: 50px;
+    padding: 50px;
+    width: 55%;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.form-control{
+    background-color: #24353F;
+}
+.form-control:focus{
+    background-color: #24353F;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.537)!important;
+}
+.signBtn{
+    transition: 0.5s all;
+    padding: 0!important;
+}
+.signBtn:hover{
+    text-decoration: underline;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 15px!important;
+}
+h1 , button{
+    color: #17a2b8!important;
+}
+button{
+    border: 1px solid #17a2b8 !important;
+    padding: 8px 40px!important;
+}
+/* home page */
+.box{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    width: 50%;
+    padding: 30px;
+}
+#home h2 , #userName{
+    color: #17a2b8;
+}
+.myNav{
+    background-color: #24353F;
+    padding-block: 20px;
+}
+.nav{
+    box-shadow: 0px 5px 10px -9px rgba(0, 0, 0, 1) ; 
+}
+.myNav button{
+    background-color: #24353F;
+    border: 1px solid white !important;
+    padding: 8px 15px!important;
+}
+.myNav #logout{
+    border: 1px solid yellow!important;
+    color: white!important;
+}
+
+@media(max-width:992px){
+    .btnlogout{
+        margin: auto;
+    }
+    .homelog{
+        flex-direction: column;
+    }
+    #bars{
+        display: block!important;
+        width: fit-content;
+    }
+}
+@media(max-width:576px){
+    section .smartSystem , .box{
+        padding: 10px;
+        width: 95%;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .box{
+        padding: 30px;
+    }
+    .box h2{
+        margin-bottom: 20px!important;
+    }
+}
